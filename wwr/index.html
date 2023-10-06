@@ -4,70 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whitewater Rafting Vacations | Dry Oar Boating | Home</title>
+    <link rel="stylesheet" href="styles/style.css"> <!--External stylesheet. The link tag tells the html file where to find the CSS it should use to style the HTML page.-->
 </head>
 <body>
-    <header>
-        <!--The <a> tag defines a hyperlink, which is used to link from one page to another. The most important attribute of the <a> element is the href attribute-->
-        <a id="logo_link" href="index.html"> <!--Users usually expect the logo to TAKE TO THE HOME PAGE of the site, so we will make the <img> element the content of an <a> element with the hypertext reference of going to the home page href="index.html" and add id="logo_link"-->
-            <img class="logo" src="images/logo.png" alt="Dry Oar Logo"> <!--two required attributes for images, source attribute (src) with its value, and an alternate text attribute with every image (alt) with its value text-->
-        </a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="#">Page 2</a>
-            <a href="site-plan-rafting.html">Site Plan</a>
-            <a href="contactus.html">Contact Us</a>
-        </nav>
-    </header>
-    <div id="hero">
-        <div id="hero-box">
-            <img id="hero-img" src="images/hero.png" alt="People enjoying white water rafting">
-        </div>
-        <section id="hero-msg"> <!--Section is a thematic grouping of content, typically with a heading. Whenever you want to move multiple elements together, like all the hero text, you should group them by placing them inside of another element; like we have with the section hero-msg.-->
-            <h1 class="home-title">Have An Adventure</h1>
-            <h4>Make Memories with Dry Oar</h4>
-            <div class="button-box">
-                <a class="book" href="contactus.html">Book Now</a>
+    <div id="content"> <!--Set a max-width so when our page gets so big, it will stop growing in size. To do this, we will need a container in HTML, id="content", to target in CSS that we can give a max-width to. The div will wrap around the entire page, or in other words, the entire contents of the body.-->
+        <header>
+            <!--The <a> tag defines a hyperlink, which is used to link from one page to another. The most important attribute of the <a> element is the href attribute-->
+            <a id="logo_link" href="index.html"> <!--Users usually expect the logo to TAKE TO THE HOME PAGE of the site, so we will make the <img> element the content of an <a> element with the hypertext reference of going to the home page href="index.html" and add id="logo_link"-->
+                <img class="logo" src="images/logo.png" alt="Dry Oar Logo"> <!--two required attributes for images, source attribute (src) with its value, and an alternate text attribute with every image (alt) with its value text-->
+            </a>
+            <nav> <!--The <nav> element contains internal web pages, <a> tags, that belong to my website-->
+                <a href="index.html">Home</a>
+                <a href="#">Page 2</a>
+                <a href="site-plan-rafting.html">Site Plan</a>
+                <a href="contactus.html">Contact Us</a>
+            </nav>
+        </header>
+        <div id="hero">
+            <div id="hero-box">
+                <img id="hero-img" src="images/hero.png" alt="People enjoying white water rafting">
             </div>
-        </section>
-    </div>
-    <main class="home-grid">
-        <section class="rivers-card">
-            <img class="card-img" src="images/rivers.jpg" alt="river in forest">
-            <img class="icon" src="images/river_icon.png" alt="river icon">
-            <h2>Rivers</h2>
-        </section>
-        <section class="camping-card">
-            <img class="card-img" src="images/camping.jpg" alt="tent in mountains">
-            <img class="icon" src="images/fire_icon.png" alt="fire icon">
-            <h2>Camping</h2>
-        </section>
-        <section class="rapids-card">
-            <img class="card-img" src="images/rapids.jpg" alt="rafting boat">
-            <img class="icon" src="images/oars.png" alt="oars icon">
-            <h2>Rapids</h2>
-        </section>
-        <img class="mountains" src="images/mountains.jpg" alt="Misty mountains">
-        <section class="msg">
-            <h2>More Than Just The Thrill</h2>
-            <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; it's way more than just the rapids. It's a great way to get away from it all and relax amongst all the beauty of the great outdoors.</p>
-            <a class="join" href="rivers.html">Join Us</a>
-        </section>
-    </main>
-    <footer>
-        <p>Dry Oar &copy; 2023 - Maria Cedillo</p>
-        <p><a href="site-plan-rafting.html">Site Plan</a></p>
-        <p><a href="contactus.html">Contact Us</a></p>
-        <div class="social">
-            <a href="https://facebook.com">
-                <img src="images/facebook.png" alt="fb icon">    
-            </a>
-            <a href="https://twitter.com">
-                <img src="images/twitter.png" alt="twitter icon">
-            </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram.png" alt="instagram icon">
-            </a>
+            <section id="hero-msg"> <!--Section is a thematic grouping of content, typically with a heading. Whenever you want to move multiple elements together, like all the hero text, you should group them by placing them inside of another element; like we have with the section hero-msg.-->
+                <h1 class="home-title">Have An Adventure</h1>
+                <h4>Make Memories with Dry Oar</h4>
+                <div class="button-box">
+                    <a class="book" href="contactus.html">Book Now</a>
+                </div>
+            </section>
         </div>
-    </footer>
+        <main class="home-grid">
+            <section class="rivers-card">
+                <img class="card-img" src="images/rivers.jpg" alt="river in forest">
+                <img class="icon" src="images/river_icon.png" alt="river icon">
+                <h2>Rivers</h2>
+            </section>
+            <section class="camping-card">
+                <img class="card-img" src="images/camping.jpg" alt="tent in mountains">
+                <img class="icon" src="images/fire_icon.png" alt="fire icon">
+                <h2>Camping</h2>
+            </section>
+            <section class="rapids-card">
+                <img class="card-img" src="images/rapids.jpg" alt="rafting boat">
+                <img class="icon" src="images/oars.png" alt="oars icon">
+                <h2>Rapids</h2>
+            </section>
+            <div id="background"></div> <!--Empty <div> to hold a background color for our message. The name is bacground because is all it will do. It will serve as a background container. There will be no content.-->
+            <img class="mountains" src="images/mountains.jpg" alt="Misty mountains">
+            <section class="msg">
+                <h2>More Than Just The Thrill</h2>
+                <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; it's way more than just the rapids. It's a great way to get away from it all and relax amongst all the beauty of the great outdoors.</p>
+                <a class="join" href="rivers.html">Join Us</a>
+            </section>
+        </main>
+        <footer>
+            <p>Dry Oar &copy; 2023 - Maria Cedillo</p>
+            <p><a href="site-plan-rafting.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank"> <!--Good practice to open external links in a new tab.-->
+                    <img src="images/facebook.png" alt="fb icon">    
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
