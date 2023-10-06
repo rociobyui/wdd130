@@ -35,7 +35,7 @@ nav a:hover {
     text-decoration: none;
     color: #134266;
 }
-.book:hover, .join:hover {
+.book:hover, .join:hover {   /*Hover Pseudo-Classes*/
     background-color: #134266;
     color: #ffffff;
 }
@@ -77,6 +77,6 @@ footer a:hover {
 footer p {
     font-size: 1.2em;
 }
-footer p a:hover {
+footer p a:hover { 
     text-decoration: underline; /*Add the default underline of links*/
 }
