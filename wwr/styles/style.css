@@ -12,37 +12,42 @@ nav a {
     color: #134266; /*The color property always refers to the font color.*/
     text-decoration: none;
     padding: 35px;    
-} 
+}
+
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
 }
+
 .button-box {
     text-align: center;
 }
+
 main section {
     text-align: center;
 }
+
 #background {          /*Targeting the new div with the id of background and give it a declaration of height: 725px*/
     height: 725px;
     background-color: #134266;
 }
+
 body {
     background-color: #ffffff; /*The background-color property will set the background color of an element. Right now, the background colors default to transparent or whatever the background color of the parent element is.*/
     font-family: 'Roboto', 'Bradley Hand', sans-serif;
-    font-size: 22px; /*Increasing the default font size for the whole page with a font-size
-    of 22px for the body*/
-    margin: 0; /*Get rid of some browser default margin and padding styles from our page.
-    Because by default, the browser will give the body a little margin, but we want to
-    have the page go right to the edge. Setting properties to zero, to begin with, is sometimes called 'reset'.*/
+    font-size: 22px; /*Increasing the default font size for the whole page with a font-size of 22px for the body*/
+    margin: 0; /*Get rid of some browser default margin and padding styles from our page. Because by default, the browser will give the body a little margin, but we want to have the page go right to the edge. Setting properties to zero, to begin with, is sometimes called 'reset'.*/
     padding: 0; /*Same above.*/
 }
+
 header {
     background-color: #fce172;
 }
+
 nav a:hover {
     background-color: #ffffff;
     color: #134266;
 }
+
 .book, .join {
     background-color: #fce172;
     text-decoration: none;
@@ -52,6 +57,7 @@ nav a:hover {
     margin-top: 50px; /*Adding margins to space out, the content on your page, beyond the borders of the elements where it is needed.*/
     border-radius: 5px; /*Add a border-radius of 5px to the .book, .join selector*/
 }
+
 .book:hover, .join:hover {   /*Hover Pseudo-Classes*/
     background-color: #134266;
     color: #ffffff;
@@ -62,69 +68,86 @@ nav a:hover {
     line-height: 1.5em; /* a little more line height*/
     padding: 35px; /*Adding padding to space out the content on your page from any edges or borders where it is needed*/
 }
+
 footer {
     background-color: #78c5d7;
     color: #ffffff;
     padding: 25px 50px;
     margin-top: 200px;
 }
+
 .home-title {
     color: #134266;
     font-family: 'Rock Salt','Bradley Hand', sans-serif;
     font-size: 2em; /*Making it twice as big as our default font size*/
     margin-top: 10px; /*Adding margins to space out the content on your page beyond the borders of the elements where it is needed*/
 }
+
 h4 {
     color: #134266;
 }
+
 .msg h2 {
     color: #134266;   
 
 }
+
 .msg p {
     color: #134266;
     font-size: .8em; /*Adjusting font sizes*/
     padding-bottom: 15px;
 }
+
 footer a {
     color: #134266; /*Override the first rule?*/
     text-decoration: none; /*Take off the default underline of links*/
 }
+
 footer a:hover {
     color: #ffffff;
 }
+
 .logo {
     width: 80px;
 }
+
 .icon {
     width: 80px;
     padding-top: 10px;
 }
+
 #hero-img {
     width: 100%;
 }
+
 footer p {
     font-size: 1.2em;
 }
+
 footer p a:hover { 
     text-decoration: underline; /*Add the default underline of links*/
 }
+
 h2 {
     margin: 0; /*Same like in body. Simple Reset. Setting properties to zero, to begin with, is sometimes called 'reset'.*/
 }
+
 #logo_link{   
     padding-top: 5px;
 }
+
 footer .social img {
     padding-top: 15px;
 }
+
 .rivers-card, .camping-card, .rapids-card {
     margin: 200px 0;
 }
+
 .card-img {
     border: 10px solid #134266; /*Add a border of 10px solid #black to a .card-img selector*/
 }
+
 main section img {
-    box-sizing: border-box; /*Add box-sizing: border-box; to the main section img selector. Now the
-    border and image will be included in the size of those images*/    
+    box-sizing: border-box; /*Add box-sizing: border-box; to the main section img selector. Now the border and image will be included in the size of those images*/    
 }
