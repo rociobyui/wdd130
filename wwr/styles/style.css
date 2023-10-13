@@ -1,11 +1,11 @@
-/* Use the font-family property when the font is web-safe or the @import by using the font-family property. the @import font always goes at the very top of the file if you are using any Google fonts change the font names below to your fonts. 
+/* Use the font-family property when the font is web-safe or the @import by using the font-family property. The @import font always goes at the very top of the file if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a & */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
 
 #content {
-    max-width: 1600px; /*Setting a width of a whole page.Apply a max-width instead of just width to your whole page to keep it from stretching across the whole browser window on very large monitors*/ 
-    margin: 0 auto; /*Centering the Whole page. The <div> we set the width on, is a block element, that means we will need to use margin to center it.*/
+    max-width: 1600px; /*Setting the width of a whole page. Applying a max-width instead of just width to your whole page to keep it from stretching across the whole browser window on larger monitors*/ 
+    margin: 0 auto; /*Centering the Whole page. The <div> we set the width on, is a block element, which means we will need to use a margin to center it.*/
 }
 nav a {
     text-align: center;
@@ -28,8 +28,8 @@ main section {
 }
 body {
     background-color: #ffffff; /*The background-color property will set the background color of an element. Right now, the background colors default to transparent or whatever the background color of the parent element is.*/
-    font-family: 'Roboto','Bradley Hand', sans-serif;
-    font-size: 22px; /*Increaseing the default font-size for the whole page with a font-size
+    font-family: 'Roboto', 'Bradley Hand', sans-serif;
+    font-size: 22px; /*Increasing the default font size for the whole page with a font-size
     of 22px for the body*/
     margin: 0; /*Get rid of some browser default margin and padding styles from our page.
     Because by default, the browser will give the body a little margin, but we want to
@@ -56,6 +56,7 @@ nav a:hover {
     background-color: #134266;
     color: #ffffff;
 }
+
 .msg {
     background-color: #78c5d7;
     line-height: 1.5em; /* a little more line height*/
