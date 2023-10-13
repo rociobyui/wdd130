@@ -28,7 +28,7 @@ main section {
 }
 body {
     background-color: #ffffff; /*The background-color property will set the background color of an element. Right now, the background colors default to transparent or whatever the background color of the parent element is.*/
-    font-family: 'Rock Salt','Bradley Hand', sans-serif;
+    font-family: 'Roboto','Bradley Hand', sans-serif;
     font-size: 22px; /*Increaseing the default font-size for the whole page with a font-size
     of 22px for the body*/
     margin: 0; /*Get rid of some browser default margin and padding styles from our page.
