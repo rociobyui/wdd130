@@ -255,8 +255,7 @@ nav {
 #faq_hero-msg {
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-top: 100px;
-    
+    margin-top: 100px;    
 }
 
 #faq_hero-box {
@@ -277,7 +276,7 @@ nav {
     font-size: 2em;
 }
 
-.age-info-img, .safe-info-img, .bring-info-img, .included-info-img, .great-info-img, .booking-info-img { /*Cambie este codigo en la html file. Necesito trabajar en esta*/
+.age-info-img, .safe-info-img, .bring-info-img, .included-info-img, .booking-info-img, .great-info-img { /*Cambie este codigo en la html file. Necesito trabajar en esta*/
     border: 10px solid #134266; /*Add a border of 10px solid #black to a .card-img selector*/
     width: 100%; /*When images are large, they make the columns very large as well. Let's make sure that the each images with the classes card-img and mountains have a width of 100%. As they get placed in the grid, they will take up 100% of the space they are given. */     
     transition: transform .5s; /*Enhancement. The CSS property you want to add an effect to and the duration of the effect. We are adding a half-second transition on our images. The transition happens when the user hovers over the images. At that point, the transform property makes the image 110% bigger, and it appears 40% transparent.*/
@@ -290,36 +289,86 @@ nav {
 
 main section img {
     box-sizing: border-box; /*Add box-sizing: border-box; to the main section img selector. Now the border and image will be included in the size of those images*/    
+    height: 225px;
 }
 
 .age-info {
     grid-column: 2/4;
-    grid-row: 2/3;       
+    grid-row: 2/3;
+    color: #134266;
+    font-size: .8em; /*Adjusting font sizes*/
+    padding-bottom: 15px;
+    text-align: justify; 
 }
 
 .safe-info {
     grid-column: 5/7;
     grid-row: 2/3;
+    color: #134266;
+    font-size: .8em; /*Adjusting font sizes*/
+    padding-bottom: 15px;
+    text-align: justify;
 }
 
 .bring-info {
     grid-column: 8/10;
     grid-row: 2/3;
+    color: #134266;
+    font-size: .8em; /*Adjusting font sizes*/
+    padding-bottom: 15px;
+    text-align: justify; 
 }
 
 .included-info {
     grid-column: 2/4;
-    grid-row: 5/6;    
-}
-
-.great-info {
-    grid-column: 5/7;
     grid-row: 5/6;
+    color: #134266;
+    font-size: .8em; /*Adjusting font sizes*/
+    padding-bottom: 15px;
+    text-align: justify;     
 }
 
 .booking-info {
+    grid-column: 5/7;
+    grid-row: 5/6;
+    color: #134266;
+    font-size: .8em; /*Adjusting font sizes*/
+    padding-bottom: 15px;
+    text-align: justify; 
+}
+
+.great-info {
     grid-column: 8/10;
     grid-row: 5/6;
+    color: #134266;
+    font-size: .8em; /*Adjusting font sizes*/
+    padding-bottom: 15px;
+    text-align: justify; 
+}
+
+.age-info h2 {
+    padding-top: 15px;
+    text-align: center;
+}
+.safe-info h2 {
+    padding-top: 15px;
+    text-align: center;
+}
+.bring-info h2 {
+    padding-top: 15px;
+    text-align: center;
+}
+.included-info h2 {
+    padding-top: 15px;
+    text-align: center;
+}
+.great-info h2 {
+    padding-top: 15px;
+    text-align: center;
+}
+.booking-info h2 {
+    padding-top: 15px;
+    text-align: center;
 }
 
 
