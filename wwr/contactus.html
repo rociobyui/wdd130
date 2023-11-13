@@ -6,10 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us or Form</title>
     <link rel="stylesheet" href="styles/style.css"> <!--Link to the CSS file. External stylesheet. The link tag tells the html file where to find the CSS it should use to style the HTML page.-->
+
+    <style>
+        /*CSS for Form*/
+
+form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 400px;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+.button {
+  /* Align buttons with the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: 0.5em;
+}
+    </style>
+
 </head>
 
 <body>
-    
     <div id="content"> <!--Set a max-width so when our page gets so big, it will stop growing in size. To do this, we will need a container in HTML, id="content", to target in CSS that we can give a max-width to. The div will wrap around the entire page, or in other words, the entire contents of the body.-->
         <header> <!--The grid container, or parent-->
             <!--The <a> tag defines a hyperlink, which is used to link from one page to another. The most important attribute of the <a> element is the href attribute-->
