@@ -105,34 +105,34 @@ button {
         <main>
     
     <!--Add an element to hold a success message when the form has been submitted. This element will be empty and invisible until the form is submitted, then we will use some Javascript to change it. Add a <div> element with an id="feedback" above your form element.-->
-    <div id="feedback"></div>
+        <div id="feedback"></div>
 
     <!--This element formally defines a form. It's a container element like a <section> or <footer> element, but specifically for containing forms. The action attribute defines the location (URL) where the form's collected data should be sent when it is submitted.
     The method attribute defines which HTTP method to send the data with (usually get or post).
     In our example, the form will send 3 pieces of data named "user_name", "user_email", and "user_message". That data will be sent to the URL "/my-handling-form-page" using the HTTP POST method.-->
-    <form action="/my-handling-form-page" method="post">
-        <ul>
-            <li> <!--The List item element. It must be contained in a parent element: an ordered list (<ol>), an unordered list (<ul>), or a menu (<menu>). In menus and unordered lists, list items are usually displayed using bullet points. In ordered lists, they are usually displayed with an ascending counter on the left, such as a number or letter.-->
-                <label for="name">Name:</label> <!--"for" is the attribute on all labels and "id" is the value. This is how I associate a form control with its label.-->
-                <input type="text" id="name" name="user_name" /> <!--The <input> tag does not need a closing tag because it is a "void element". In HTML a void element cannot have any child nodes. (i.e., nested elements or text nodes). Void elements only have a start tag; end tags must not be specified for void elements.  The input field for the name is a single-line text field.-->
-            </li>
-            <li>
-                <label for="mail">Email:</label>
-                <input type="email" id="mail" name="user_email" /> <!--The input field for the email is an input of type email: a single-line text field that accepts only email addresses.-->
-            </li>
-            <li>
-                <label for="msg">Message:</label>
-                <!--<textarea> is not a void element. It should be closed with the proper ending tag.-->
-                <textarea id="msg" name="user_message"></textarea> <!--The input field for the message is a <textarea>; a multiline text field.-->
-            </li>
-            
-            <!--Add a button to allow the user to send, or "submit", their data once they have filled out the form. This is done by using the <button> element; add the following just above the closing </ul> tag. The <button> element also accepts a type attribute — this accepts one of three values: submit, reset, or button.
-                Note: You can also use the <input> element with the corresponding type to produce a button, for example <input type="submit">. The main advantage of the <button> element is that the <input> element only allows plain text in its label whereas the <button> element allows full HTML content, allowing more complex, creative button content.-->
-            <li class="button">
-                <button type="submit">Send your message</button>
-            </li>
-        </ul>
-    </form>
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+                <li> <!--The List item element. It must be contained in a parent element: an ordered list (<ol>), an unordered list (<ul>), or a menu (<menu>). In menus and unordered lists, list items are usually displayed using bullet points. In ordered lists, they are usually displayed with an ascending counter on the left, such as a number or letter.-->
+                    <label for="name">Name:</label> <!--"for" is the attribute on all labels and "id" is the value. This is how I associate a form control with its label.-->
+                    <input type="text" id="name" name="user_name" /> <!--The <input> tag does not need a closing tag because it is a "void element". In HTML a void element cannot have any child nodes. (i.e., nested elements or text nodes). Void elements only have a start tag; end tags must not be specified for void elements.  The input field for the name is a single-line text field.-->
+                </li>
+                <li>
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="user_email" /> <!--The input field for the email is an input of type email: a single-line text field that accepts only email addresses.-->
+                </li>
+                <li>
+                    <label for="msg">Message:</label>
+                    <!--<textarea> is not a void element. It should be closed with the proper ending tag.-->
+                    <textarea id="msg" name="user_message"></textarea> <!--The input field for the message is a <textarea>; a multiline text field.-->
+                </li>
+                
+                <!--Add a button to allow the user to send, or "submit", their data once they have filled out the form. This is done by using the <button> element; add the following just above the closing </ul> tag. The <button> element also accepts a type attribute — this accepts one of three values: submit, reset, or button.
+                    Note: You can also use the <input> element with the corresponding type to produce a button, for example <input type="submit">. The main advantage of the <button> element is that the <input> element only allows plain text in its label whereas the <button> element allows full HTML content, allowing more complex, creative button content.-->
+                <li class="button">
+                    <button type="submit">Send your message</button>
+                </li>
+            </ul>
+        </form>
         </main>        
         
         <footer>
