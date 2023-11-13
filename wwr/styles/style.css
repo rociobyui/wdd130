@@ -372,8 +372,6 @@ main section img {
 }
 
 
-
-
 /*Feedback CSS*/
 #feedback {
     background-color: antiquewhite;
@@ -389,9 +387,6 @@ main section img {
     margin-top: 3em;
 }
     
-
-
-
 
 
 /*Responsive Design. One of the key parts to a responsive design is a @media query. These let us change our CSS based on the width of the browser window and other things as well. Media queries always need to be after all the other CSS. Don't add any CSS after the media query later either. This could be read as follows: "If the max width of the screen gets smaller than 900px, then use this CSS instead of what you may have seen above" for these selectors.
