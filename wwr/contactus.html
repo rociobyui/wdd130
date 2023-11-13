@@ -1,0 +1,107 @@
+<!--An HTML form is used to collect user input. The user input is most often sent to a server for processing.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us or Form</title>
+    <link rel="stylesheet" href="styles/style.css"> <!--Link to the CSS file. External stylesheet. The link tag tells the html file where to find the CSS it should use to style the HTML page.-->
+</head>
+
+<body>
+    
+    <div id="content"> <!--Set a max-width so when our page gets so big, it will stop growing in size. To do this, we will need a container in HTML, id="content", to target in CSS that we can give a max-width to. The div will wrap around the entire page, or in other words, the entire contents of the body.-->
+        <header> <!--The grid container, or parent-->
+            <!--The <a> tag defines a hyperlink, which is used to link from one page to another. The most important attribute of the <a> element is the href attribute-->
+            <a id="logo_link" href="index.html"> <!--Users usually expect the logo to TAKE TO THE HOME PAGE of the site, so we will make the <img> element the content of an <a> element with the hypertext reference of going to the home page href="index.html" and add id="logo_link"-->
+                <img class="logo" src="images/logo.png" alt="Dry Oar Logo"> <!--two required attributes for images, source attribute (src) with its value, and an alternate text attribute with every image (alt) with its value text-->
+            </a>
+            <nav> <!--The <nav> element contains internal web pages, <a> tags, that belong to my website-->
+                <a href="index.html">Home</a>
+                <a href="#">FAQ</a>
+                <a href="site-plan-rafting.html">Site Plan</a>
+                <a href="contactus.html">Contact Us</a>
+            </nav>
+        </header>
+
+        <div id="faq_hero">
+            <div id="faq_hero-box">
+                <img id= faq_hero-img src="images/faq_hero.png" alt="River scenery">
+        </div>
+            <section id="faq_hero-msg">
+                <h1 class="faq-title">Do You Need Help?</h1>
+                <h4 class="faq-subtitle">We Are Here to Help You!</h4>
+            </section>
+        </div>
+        
+        <main>
+    
+    <!--Add an element to hold a success message when the form has been submitted. This element will be empty and invisible until the form is submitted, then we will use some Javascript to change it. Add a <div> element with an id="feedback" above your form element.-->
+    <div id="feedback"></div>
+
+    <!--This element formally defines a form. It's a container element like a <section> or <footer> element, but specifically for containing forms. The action attribute defines the location (URL) where the form's collected data should be sent when it is submitted.
+    The method attribute defines which HTTP method to send the data with (usually get or post).
+    In our example, the form will send 3 pieces of data named "user_name", "user_email", and "user_message". That data will be sent to the URL "/my-handling-form-page" using the HTTP POST method.-->
+    <form action="/my-handling-form-page" method="post">
+        <ul>
+            <li> <!--The List item element. It must be contained in a parent element: an ordered list (<ol>), an unordered list (<ul>), or a menu (<menu>). In menus and unordered lists, list items are usually displayed using bullet points. In ordered lists, they are usually displayed with an ascending counter on the left, such as a number or letter.-->
+                <label for="name">Name:</label> <!--"for" is the attribute on all labels and "id" is the value. This is how I associate a form control with its label.-->
+                <input type="text" id="name" name="user_name" /> <!--The <input> tag does not need a closing tag because it is a "void element". In HTML a void element cannot have any child nodes. (i.e., nested elements or text nodes). Void elements only have a start tag; end tags must not be specified for void elements.  The input field for the name is a single-line text field.-->
+            </li>
+            <li>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="user_email" /> <!--The input field for the email is an input of type email: a single-line text field that accepts only email addresses.-->
+            </li>
+            <li>
+                <label for="msg">Message:</label>
+                <!--<textarea> is not a void element. It should be closed with the proper ending tag.-->
+                <textarea id="msg" name="user_message"></textarea> <!--The input field for the message is a <textarea>; a multiline text field.-->
+            </li>
+            
+            <!--Add a button to allow the user to send, or "submit", their data once they have filled out the form. This is done by using the <button> element; add the following just above the closing </ul> tag. The <button> element also accepts a type attribute — this accepts one of three values: submit, reset, or button.
+                Note: You can also use the <input> element with the corresponding type to produce a button, for example <input type="submit">. The main advantage of the <button> element is that the <input> element only allows plain text in its label whereas the <button> element allows full HTML content, allowing more complex, creative button content.-->
+            <li class="button">
+                <button type="submit">Send your message</button>
+            </li>
+        </ul>
+    </form>
+        </main>        
+        
+        <footer>
+            <p>Dry Oar &copy; 2023 - Maria Cedillo</p>
+            <p><a href="site-plan-rafting.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank"> <!--Good practice to open external links in a new tab.-->
+                    <img src="images/facebook.png" alt="fb icon">    
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+
+<!--Code for Functional Forms. Our form currently doesn't do anything (or maybe even gives you an error) if I do not have the following code. If you would like it to do something, we need to add a bit of code to your project. "feedback"(right before the ending body tag).  -->
+<script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+</script>
+</body>
+</html>
