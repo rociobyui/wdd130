@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Matters | Functional Design | How to Start</title>
+    <link rel="stylesheet" href="styles/style.css"> <!--Link to the CSS file. External stylesheet. The link tag tells the html file where to find the CSS it should use to style the HTML page.-->
+</head>
+<body>
+    <div id="content"> <!--Set a max-width so when our page gets so big, it will stop growing in size. To do this, we will need a container in HTML, id="content", to target in CSS that we can give a max-width to. The div will wrap around the entire page, or in other words, the entire contents of the body.-->
+        <header> <!--The grid container, or parent-->
+            <!--The <a> tag defines a hyperlink, which is used to link from one page to another. The most important attribute of the <a> element is the href attribute-->
+            <a id="logo_link" href="index.html"> <!--Users usually expect the logo to TAKE TO THE HOME PAGE of the site, so we will make the <img> element the content of an <a> element with the hypertext reference of going to the home page href="index.html" and add id="logo_link"-->
+                <img class="logo" src="images/logo.png" alt="Website Matters Logo"> <!--two required attributes for images, source attribute (src) with its value, and an alternate text attribute with every image (alt) with its value text-->
+            </a>
+            <nav> <!--The <nav> element contains internal web pages, <a> tags, that belong to my website-->
+                <a href="index.html">HOME</a>
+                <a href="how_to_start.html">HOW TO START</a>
+                <a href="why_choose_us.html">WHY CHOOSE US</a>
+                <a href="start_a_conversation.html">START A CONVERSATION</a>
+            </nav>
+        </header>
+
+        <h1>Getting a website can be a daunting task, but Website Matters is here to help!</h1>
+        <h3>Here is How to Get a Website for Your Business</h3>
+            
+        <!-- List container -->
+        <div class="unordered_list-container">
+            <!--Full list -->
+            <ul>
+                <li>First of all, you'll need to contact us to schedule a meeting.</li>
+                <li>During this meeting, we'll take the time to learn about your business and make it our top priority.</li>
+                <li>Next, we will meet again to present you with a professional wireframe of your website. If you're wondering what a wireframe is, don't worry, it's just a is a simple visual representation of a web page. It is used to outline the structure and 
+                    layout of a future web page. At this stage, we welcome your input and feedback so we can make any changes as needed. Do not hesitate to ask questions because we want to help you!</li>
+                <li>Then, leave the rest to us! This is where we'll start building your website and writing the unique code for it. We take pride in this step and enjoy every moment.</li>
+                <li>After we're done designing your website with the right code, we'll contact you and show you the final product before launching it. At this point, we can make any minor changes you request.</li>
+                <li>Finally, after your approbation, your website will be live on the internet and ready for your visitors to purchase your goods and services.</li>
+            </ul>   
+        </div>
+
+        <main>
+            <div id="tired"> <!--The grid container, or parent-->
+                <div id="tired-box"> <!--Child-->
+                    <img id="tired-img" src="images/distraught_man.jpg" alt="Distraught man reading something in a laptop.">
+                </div>
+                <section id="tired-msg"> <!--(Child) Section is a thematic grouping of content, typically with a heading. Whenever you want to move multiple elements together, like all the hero text, you should group them by placing them inside of another element; like we have with the section hero-msg.-->
+                    <h1 class="how_to_start-title">Tired of juggling your business's digital needs?</h1>
+                    <h4>It's time to stop the struggle and partner with us. We'll shoulder the burden, handling everything in the digital space so you can focus on what you do best - running your business.</h4>
+                    <div class="button-box">
+                        <a class="start_a_conversation" href="start_a_conversation.html">START A CONVERSATION</a>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="social">
+                <p>VISIT US</p>
+                <a href="https://facebook.com" target="_blank"> <!--Good practice to open external links in a new tab.-->
+                    <img src="images/facebook.png" alt="fb icon">    
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/linkedin.png" alt="linkedin icon">
+                </a>
+            
+                <p>GET IN TOUCH</p>
+                <p>(360) 491-5318</p>
+                <p>sales@WebsiteMatters.com</p>
+
+                <a href="start_a_conversation.html">START A CONVERSATION</a> 
+                    <img src="images/form_icon.png" alt="form icon">
+                
+                <h4>REQURED FOR ASSIGNMENT</h4>
+                <p><a href="site-plan.html">SITE PLAN</a></p>
+            </div>
+
+        </footer>
+    </div>
+</body>
+</html>

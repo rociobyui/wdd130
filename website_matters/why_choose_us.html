@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Matters | Functional Design | Why Choose Us</title>
+    <link rel="stylesheet" href="styles/style.css"> <!--Link to the CSS file. External stylesheet. The link tag tells the html file where to find the CSS it should use to style the HTML page.-->
+</head>
+
+<body>
+    <div id="content"> <!--Set a max-width so when our page gets so big, it will stop growing in size. To do this, we will need a container in HTML, id="content", to target in CSS that we can give a max-width to. The div will wrap around the entire page, or in other words, the entire contents of the body.-->
+        <header> <!--The grid container, or parent-->
+            <!--The <a> tag defines a hyperlink, which is used to link from one page to another. The most important attribute of the <a> element is the href attribute-->
+            <a id="logo_link" href="index.html"> <!--Users usually expect the logo to TAKE TO THE HOME PAGE of the site, so we will make the <img> element the content of an <a> element with the hypertext reference of going to the home page href="index.html" and add id="logo_link"-->
+                <img class="logo" src="images/logo.png" alt="Website Matters Logo"> <!--two required attributes for images, source attribute (src) with its value, and an alternate text attribute with every image (alt) with its value text-->
+            </a>
+            <nav> <!--The <nav> element contains internal web pages, <a> tags, that belong to my website-->
+                <a href="index.html">HOME</a>
+                <a href="how_start.html">HOW TO START</a> 
+                <a href="why_choose_us.html">WHY CHOOSE US</a>
+                <a href="start_a_conversation.html">START A CONVERSATION</a>
+            </nav>
+        </header>
+
+        <div id="meeting"> <!--The grid container, or parent-->
+            <div id="meeting-box"> <!--Child-->
+                <img id="meeting-img" src="images/meeting.png" alt="People shaking hands">
+            </div>
+            <section id="meeting-msg"> <!--(Child) Section is a thematic grouping of content, typically with a heading. Whenever you want to move multiple elements together, like all the hero text, you should group them by placing them inside of another element; like we have with the section hero-msg.-->
+                <h1 class="why_choose_us-title">Trasnparent & Trustworthy</h1>
+                <h4>Transparency is the fundation of our partnerships. We believe in open, honest communication, fostering trust, and ensuring that yours success is our success too!  </h4>
+                <div class="button-box">
+                    <a class="start_a_conversation" href="start_a_conversation.html">START A CONVERSATION</a>
+                </div>
+            </section>
+        </div>
+
+        <main>
+            
+
+            <details>
+                <p>Entrusting a web development company with a crucial part of your company's success can be a daunting task, right? At Website Matters, we understand this, which is why we believe a website is the most significant aspect of a business's marketing efforts.</p>
+                <summary>Transparente and Trustworthy Company</summary>
+                Website Matters has extensive knowledge and credited experience in computer languages. We possess impeccable credentials to build efficient websites. We follow the best coding practices. This ensures that anyone who reads your website code in the future can easily comprehend it and make minor updates and necessary additions:)
+            </details>
+
+            <details>
+                <summary>Have you ever clicked on a page or link on the internet that failed to open or resulted in an error?</summary>
+                You don't need to worry about this if we are handling your website. Our expertise guarantees that your website's visitors come first, and they will be able to access your company’s website, along with all of its links, on any electronic device without any problem.
+            </details>
+
+            <h1>Don't delay any further in getting an attractive, functional, and useful website for your business!</h1>
+        </main>
+
+        <footer>
+            
+            <div class="social">
+                <p>VISIT US</p>
+                <a href="https://facebook.com" target="_blank"> <!--Good practice to open external links in a new tab.-->
+                    <img src="images/facebook.png" alt="fb icon">    
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/linkedin.png" alt="linkedin icon">
+                </a>
+            
+                <p>GET IN TOUCH</p>
+                <p>(360) 491-5318</p>
+                <p>sales@WebsiteMatters.com</p>
+
+                <a href="start_a_conversation.html">START A CONVERSATION</a> 
+                    <img src="images/form_icon.png" alt="form icon">
+                
+                <h4>text</h4>
+                <p><a href="site-plan.html">SITE PLAN</a></p>
+            </div>
+
+        </footer>
+    </div>
+</body>
+</html>

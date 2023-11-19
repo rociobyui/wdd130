@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Matters | Functional Design | Home</title>
+    <link rel="stylesheet" href="styles/style.css"> <!--Link to the CSS file. External stylesheet. The link tag tells the html file where to find the CSS it should use to style the HTML page.-->
+</head>
+<body>
+    <div id="content"> <!--Set a max-width so when our page gets so big, it will stop growing in size. To do this, we will need a container in HTML, id="content", to target in CSS that we can give a max-width to. The div will wrap around the entire page, or in other words, the entire contents of the body.-->
+        <header> <!--The grid container, or parent-->
+            <!--The <a> tag defines a hyperlink, which is used to link from one page to another. The most important attribute of the <a> element is the href attribute-->
+            <a id="logo_link" href="index.html"> <!--Users usually expect the logo to TAKE TO THE HOME PAGE of the site, so we will make the <img> element the content of an <a> element with the hypertext reference of going to the home page href="index.html" and add id="logo_link"-->
+                <img class="logo" src="images/logo.png" alt="Website Matters Logo"> <!--two required attributes for images, source attribute (src) with its value, and an alternate text attribute with every image (alt) with its value text-->
+            </a>
+            <nav> <!--The <nav> element contains internal web pages, <a> tags, that belong to my website-->
+                <a href="index.html">HOME</a>
+                <a href="how_start.html">HOW TO START</a>
+                
+                <a href="why_choose_us.html">WHY CHOOSE US</a>
+                <a href="start_a_conversation.html">START A CONVERSATION</a>
+            </nav>
+        </header>
+            
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/hero.png" style="width:100%">
+            <div class="text">Caption Text</div>
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/malfunctioning.png" style="width:100%">
+            <div class="text">Caption Two</div>
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/web_traffic.png" style="width:100%">
+            <div class="text">Caption Three</div>
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <main>
+            <div id="background"></div> <!--Empty <div> to hold a background color for our message. The name is bacground because is all it will do. It will serve as a background container. There will be no content.-->
+                <section class="msg">
+                    <h2>Tired of juggling your business's digital needs?</h2>
+                    <p>It's time to stop the struggle and partner with us. We'll shoulder the burden, handling everything in the digital space so you can focus on what you do best - running your business.</p>
+                </section>
+                <img class="Distraught-Man" src="images/distraught_man.jpg" alt="Distraught man reading something in a laptop.">
+            
+        </main>
+
+        <footer>
+            
+            <div class="social">
+                <p>VISIT US</p>
+                <a href="https://facebook.com" target="_blank"> <!--Good practice to open external links in a new tab.-->
+                    <img src="images/facebook.png" alt="fb icon">    
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/linkedin.png" alt="linkedin icon">
+                </a>
+            
+                <p>GET IN TOUCH</p>
+                <p>(360) 491-5318</p>
+                <p>sales@WebsiteMatters.com</p>
+
+                <a href="start_a_conversation.html">START A CONVERSATION</a> 
+                    <img src="images/form_icon.png" alt="form icon">
+                
+                <h4>text</h4>
+                <p><a href="site-plan.html">SITE PLAN</a></p>
+            </div>
+
+        </footer>
+    </div>
+</body>
+</html>
