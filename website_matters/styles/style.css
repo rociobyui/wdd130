@@ -130,8 +130,9 @@ main section {
     grid-row: 6/7;
     box-shadow: 10px 10px 20px #264653; /*Enhancements*/
 }
-.msg h1 {
-    color: #fef4ec;   
+.msg h2 {
+    color: #fef4ec;
+
 
 }
 
