@@ -120,7 +120,7 @@ main section {
     grid-column: 5/10;
     grid-row: 5/8;
     box-shadow: 5px 5px 10px #264653; /*Enhancements*/
-    height: auto;
+    height: auto; /*Responsivenes in the img. Width 100% and height to auto.*/
 }
 .msg {
     background-color: #2a9d8f;
