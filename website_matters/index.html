@@ -5,6 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Matters | Functional Design | Home</title>
     <link rel="stylesheet" href="styles/style.css"> <!--Link to the CSS file. External stylesheet. The link tag tells the html file where to find the CSS it should use to style the HTML page.-->
+
+    <!--Javascrip code to get functioning slideshow-->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }   
+    </script>
+
 </head>
 <body>
     <div id="content"> <!--Set a max-width so when our page gets so big, it will stop growing in size. To do this, we will need a container in HTML, id="content", to target in CSS that we can give a max-width to. The div will wrap around the entire page, or in other words, the entire contents of the body.-->
@@ -20,27 +53,36 @@
                 <a href="start_a_conversation.html">START A CONVERSATION</a>
             </nav>
         </header>
+
+        <main class="home-grid">
+            <div id="background"></div> <!--Empty <div> to hold a background color for our message. The name is bacground because is all it will do. It will serve as a background container. There will be no content.-->
+                <img class="distraught_man" src="images/distraught_man.jpg" alt="Distraught man image.">
+                <section class="msg">
+                    <h1>Tired of Juggling Your Business's Digital Needs?</h1>
+                    <p>It's time to stop the struggle and partner with Website Matters. We'll shoulder the burden, handling everything in the digital space so you can focus on what you do best - running your business.</p>
+                </section>     
+        </main>
             
         <!-- Slideshow container -->
         <div class="slideshow-container">
 
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="images/hero.png" style="width:100%">
-            <div class="text">Caption Text</div>
+                <div class="numbertext">1 / 3</div>
+                <img src="images/hero.png" alt= "Woman enjoys searching on the internet." style="width: 100%">
+                <div class="text">Maybe you are wondering if it is worth having a website for your business. My answer would be yes, it is, but you should find out for yourself. Whether you need a website for the first time or already have an existing one that's not performing well, Website Matters is the perfect company to help you. At Website Matters, we are committed to providing excellent website development services and we possess all the necessary tools and expertise to create high-quality websites.</div>
             </div>
-        
+            
             <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="images/malfunctioning.png" style="width:100%">
-            <div class="text">Caption Two</div>
+                <div class="numbertext">2 / 3</div>
+                <img src="images/web_traffic.png" alt="web traffic image" style="width: 100%">
+                <div class="text">If you want to improve your online presence and increase your sales and services with a well-designed website, don't hesitate to contact us. We offer a wide range of services, including designing your company's website and logo, as well as enhancing your existing website. We will listen carefully if you have a clear idea of how you want your website to look and provide professional guidance accordingly.</div>
             </div>
-        
+
             <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="images/web_traffic.png" style="width:100%">
-            <div class="text">Caption Three</div>
+                <div class="numbertext">3 / 3</div>
+                <img src="images/malfunctioning.png" alt="404 broken link" style="width: 100%;">
+                <div class="text">On the other hand, if you already have a website that's not working as it should, we will analyze the problem and guide you on how to handle the situation. We won't leave you stranded! We'll make the necessary changes to your company's website and provide you with a professional guide to achieving success. So, let's work together!</div>
             </div>
         
             <!-- Next and previous buttons -->
@@ -48,7 +90,7 @@
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
         <br>
-        
+
         <!-- The dots/circles -->
         <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
@@ -56,18 +98,7 @@
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
 
-        <main>
-            <div id="background"></div> <!--Empty <div> to hold a background color for our message. The name is bacground because is all it will do. It will serve as a background container. There will be no content.-->
-                <section class="msg">
-                    <h2>Tired of juggling your business's digital needs?</h2>
-                    <p>It's time to stop the struggle and partner with us. We'll shoulder the burden, handling everything in the digital space so you can focus on what you do best - running your business.</p>
-                </section>
-                <img class="distraught_man" src="images/distraught_man.jpg" alt="Distraught man image.">
-            
-        </main>
-
         <footer>
-            
             <div class="social">
                 <p>VISIT US</p>
                 <a href="https://facebook.com" target="_blank"> <!--Good practice to open external links in a new tab.-->
@@ -79,19 +110,28 @@
                 <a href="https://instagram.com" target="_blank">
                     <img src="images/instagram.png" alt="instagram icon">
                 </a>
-                <a href="https://instagram.com" target="_blank">
+                <a href="https://www.linkedin.com" target="_blank">
                     <img src="images/linkedin.png" alt="linkedin icon">
                 </a>
+            </div>
             
+            <div class="get_in_touch">
                 <p>GET IN TOUCH</p>
-                <p>(360) 491-5318</p>
-                <p>sales@WebsiteMatters.com</p>
+                <h4>(360) 491-5318</h4>
+                <h4>sales@WebsiteMatters.com</h4>
+            </div>
 
-                <a href="start_a_conversation.html">START A CONVERSATION</a> 
+            <div class="form">
+                <p>START A CONVERSATION</p>
+                <a href="start_a_conversation.html">
                     <img src="images/form_icon.png" alt="form icon">
-                
-                <h4>text</h4>
-                <p><a href="site-plan.html">SITE PLAN</a></p>
+                </a>
+            </div>    
+            <div class="site_plan">
+                <p>SITE PLAN</p>
+                <a href="site-plan.html">
+                    <img src="images/wireframe_icon.png" alt="wireframe icon">
+                </a>
             </div>
 
         </footer>
