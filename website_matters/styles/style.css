@@ -382,8 +382,6 @@ button:hover {
   grid-column: 2/6;
   grid-row: 6/7;
   box-shadow: 5px 5px 10px #2a9d8f; /*Enhancements*/
-  width: 100%;
-  height: auto;
 }
 
 .how_to_start-title {
@@ -449,6 +447,14 @@ You may notice display: none was used on a few selectors to make them disappear.
         display: block;
         height: auto;
     }
+
+    .how_to_start-grid { /*YO*/
+      display: block;
+      height: auto;
+    }
+
+
+    
     nav, footer {
         flex-direction: column;
     }
