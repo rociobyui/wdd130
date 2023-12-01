@@ -333,8 +333,7 @@ button:hover {
 /*How to Start Subpage CSS*/
 
 /*Parent container*/
-
-.title_revealing h1 {
+.how_to_start-title h1 {
   background: #2a9d8f;
   color: #fef4ec;
   padding: 15px 30px; /*Adding padding to space out, the content on your page, from any edges or borders where it is needed.*/
@@ -343,9 +342,8 @@ button:hover {
   margin-bottom: 100px;
   border-radius: 5px; /*Add a border-radius of 5px to the .book, .join selector*/
 }
-.title_revealing h2 {
-  color: #264653;
-  
+.how_to_start-title h2 {
+  color: #264653; 
 }
 .list-container ul {
   background: #efd595;
@@ -357,8 +355,6 @@ button:hover {
   color: #264653;
   line-height: 1.2em; /* a little more line height*/
 }
-
-
 
 /*Parent container*/
 .how_to_start-grid {
