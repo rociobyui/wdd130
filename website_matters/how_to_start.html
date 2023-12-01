@@ -25,7 +25,7 @@
         <h3>Here is How to Get a Website for Your Business</h3>
             
         <!-- List container -->
-        <div class="unordered_list-container">
+        <div class="fade_list-container">
             <!--Full list -->
 
             <ul>
@@ -39,20 +39,17 @@
             </ul>   
         </div>
 
-        <main>
-            <div id="yellow_background"> <!--The grid container, or parent-->
-                <div id="yellow_background-box"> <!--Child-->
-                    <img id="yellow_background-img" src="images/background.png" alt="Yellow_background image.">
+        <main class="how_to_start-grid">
+            <div id="how_to_start_background"></div> <!--Empty <div> to hold a background color for our message. The name is bacground because is all it will do. It will serve as a background container. There will be no content.-->
+            <img class="client_interaction-img" src="images/client_interaction.png" alt="Business women in their office meeting a client.">
+            <section class="blue_background-msg"> <!--(Child) Section is a thematic grouping of content, typically with a heading. Whenever you want to move multiple elements together, like all the hero text, you should group them by placing them inside of another element; like we have with the section hero-msg.-->
+                <h1 class="how_to_start-title">We Elevate Your Expectations</h1>
+                <p>Experience the power of a patner who's more than web design agency. We are your ticket to a captivating online presence that sets you apart from the competition.</p>
+                <h3>Get ready to shine in the digital arena!</h3>
+                <div class="start_conversation-button-box">
+                    <a class="start_a_conversation" href="start_a_conversation.html">START A CONVERSATION</a>
                 </div>
-                <section id="yellow_bacground-msg"> <!--(Child) Section is a thematic grouping of content, typically with a heading. Whenever you want to move multiple elements together, like all the hero text, you should group them by placing them inside of another element; like we have with the section hero-msg.-->
-                    <h1 class="how_to_start-title">We Elevate Your Expectations</h1>
-                    <h4>Experience the power of a patner who's more than web design agency. We are your ticket to a captivating online presence that sets you apart from the competition.</h4>
-                    <h3>Get ready to shine in the digital arena!</h3>
-                    <div class="button-box">
-                        <a class="start_a_conversation" href="start_a_conversation.html">START A CONVERSATION</a>
-                    </div>
-                </section>
-            </div>
+            </section>
         </main>
 
         <footer>
@@ -67,19 +64,28 @@
                 <a href="https://instagram.com" target="_blank">
                     <img src="images/instagram.png" alt="instagram icon">
                 </a>
-                <a href="https://instagram.com" target="_blank">
+                <a href="https://www.linkedin.com" target="_blank">
                     <img src="images/linkedin.png" alt="linkedin icon">
                 </a>
+            </div>
             
+            <div class="get_in_touch">
                 <p>GET IN TOUCH</p>
-                <p>(360) 491-5318</p>
-                <p>sales@WebsiteMatters.com</p>
+                <h4>(360) 491-5318</h4>
+                <h4>sales@WebsiteMatters.com</h4>
+            </div>
 
-                <a href="start_a_conversation.html">START A CONVERSATION</a> 
+            <div class="form">
+                <p>START A CONVERSATION</p>
+                <a href="start_a_conversation.html">
                     <img src="images/form_icon.png" alt="form icon">
-                
-                <h4>REQURED FOR ASSIGNMENT</h4>
-                <p><a href="site-plan.html">SITE PLAN</a></p>
+                </a>
+            </div>    
+            <div class="site_plan">
+                <p>SITE PLAN</p>
+                <a href="site-plan.html">
+                    <img src="images/wireframe_icon.png" alt="wireframe icon">
+                </a>
             </div>
 
         </footer>

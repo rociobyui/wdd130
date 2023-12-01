@@ -135,7 +135,6 @@ main section {
 
 
 }
-
 .msg p {
     color: #fef4ec;
     font-size: 1em; /*Adjusting font sizes*/
@@ -332,7 +331,80 @@ button:hover {
 
 
 /*How to Start Subpage CSS*/
- 
+.fade_list-container ul {
+  transition: all 0.4s ease-out;
+  opacity: 0;
+  height: 2em;
+}
+.fade_list-container ul.show {
+  opacity: 1;
+}
+
+
+
+/*Parent container*/
+.how_to_start-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); /*Ten equal, fractions, columns*/
+}
+#how_to_start_background {          /*Targeting the new div with the id of background and give it a declaration of height: 725px*/
+  height: 725px;
+  background-color: #264653;
+  grid-column: 1/11;
+  grid-row: 4/9;
+}
+.client_interaction-img {
+    width: 100%; /*When images are large, they make the columns very large as well. Let's make sure that the each images with the classes card-img and mountains have a width of 100%. As they get placed in the grid, they will take up 100% of the space they are given. */ 
+    grid-column: 5/10;
+    grid-row: 5/8;
+    box-shadow: 5px 5px 10px #264653; /*Enhancements*/
+    height: auto; /*Responsivenes in the img. Width 100% and height to auto.*/
+
+}
+.blue_background-msg {
+  background-color: #efd595;
+  line-height: 1.5em; /* a little more line height*/
+  padding: 35px; /*Adding padding to space out the content on your page from any edges or borders where it is needed*/
+  grid-column: 2/6;
+  grid-row: 6/7;
+  box-shadow: 5px 5px 10px #2a9d8f; /*Enhancements*/
+}
+
+.how_to_start-title {
+  color: #264653;
+  font-family: 'Montserrat', 'Helvetica', sans-serif;
+  margin-top: 10px;
+}
+
+.blue_background-msg p {
+  color: #264653;
+  font-size: 1em; /*Adjusting font sizes*/
+  padding-bottom: 15px;
+}
+
+main section img {
+  box-sizing: border-box; /*Add box-sizing: border-box; to the main section img selector. Now the border and image will be included in the size of those images*/    
+}
+.start_a_conversation {
+  background-color: #2a9d8f;
+  text-decoration: none;
+  color: #fef4ec;
+  padding: 15px 30px; /*Adding padding to space out, the content on your page, from any edges or borders where it is needed.*/
+  margin-top: 50px; /*Adding margins to space out, the content on your page, beyond the borders of the elements where it is needed.*/
+  border-radius: 5px; /*Add a border-radius of 5px to the .book, .join selector*/
+}
+.start_conversation-button-box {
+  text-align: center;
+}
+
+.start_a_conversation:hover {   /*Hover Pseudo-Classes*/
+  background-color: #264653;
+  color: #fef4ec;
+}
+
+
+
+
 
 /*Feedback CSS*/
 #feedback {
