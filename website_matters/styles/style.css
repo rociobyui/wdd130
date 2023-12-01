@@ -331,13 +331,31 @@ button:hover {
 
 
 /*How to Start Subpage CSS*/
-.fade_list-container ul {
-  transition: all 0.4s ease-out;
-  opacity: 0;
-  height: 2em;
+
+/*Parent container*/
+
+.title_revealing h1 {
+  background: #2a9d8f;
+  color: #fef4ec;
+  padding: 15px 30px; /*Adding padding to space out, the content on your page, from any edges or borders where it is needed.*/
+  margin-left: 150px; /*Adding margins to space out, the content on your page, beyond the borders of the elements where it is needed.*/
+  margin-right: 150px;
+  margin-bottom: 100px;
+  border-radius: 5px; /*Add a border-radius of 5px to the .book, .join selector*/
 }
-.fade_list-container ul.show {
-  opacity: 1;
+.title_revealing h2 {
+  color: #264653;
+  
+}
+.list-container ul {
+  background: #efd595;
+  padding: 15px 30px; /*Adding padding to space out, the content on your page, from any edges or borders where it is needed.*/
+  margin-left: 150px; /*Adding margins to space out, the content on your page, beyond the borders of the elements where it is needed.*/
+  margin-right: 150px;
+  margin-bottom: 100px;
+  border-radius: 5px; /*Add a border-radius of 5px to the .book, .join selector*/
+  color: #264653;
+  line-height: 1.2em; /* a little more line height*/
 }
 
 
@@ -400,6 +418,9 @@ main section img {
 .start_a_conversation:hover {   /*Hover Pseudo-Classes*/
   background-color: #264653;
   color: #fef4ec;
+}
+div h1 {
+  text-align: center;
 }
 
 
