@@ -454,7 +454,7 @@ You may notice display: none was used on a few selectors to make them disappear.
     }
 
 
-    
+
     nav, footer {
         flex-direction: column;
     }
@@ -481,6 +481,10 @@ You may notice display: none was used on a few selectors to make them disappear.
     }
     #background {
         display: none;
+    }
+
+    #how_to_start_background { /*YO*/
+      display: none;
     }
     .mountains, .msg {
         width: 80%;
