@@ -480,7 +480,8 @@ You may notice display: none was used on a few selectors to make them disappear.
     .how_to_start-title  h1 { /*YO, no cambio nada*/
       font-size: 25px;
       color: #264653;
-      width: 50%;
+      display: flex;
+      justify-content: center;
        
     }
 
