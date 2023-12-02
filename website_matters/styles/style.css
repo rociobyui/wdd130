@@ -343,7 +343,8 @@ button:hover {
   border-radius: 5px; /*Add a border-radius of 5px to the .book, .join selector*/
 }
 .how_to_start-msg h2{
-  color: #264653; 
+  color: #264653;
+  font-size: 2em; 
 }
 .list-container ul {
   background: #efd595;
