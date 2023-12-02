@@ -342,7 +342,7 @@ button:hover {
   margin-bottom: 100px;
   border-radius: 5px; /*Add a border-radius of 5px to the .book, .join selector*/
 }
-.how_to_start-title h2 {
+.how_to_start-msg h2{
   color: #264653; 
 }
 .list-container ul {
@@ -477,15 +477,16 @@ You may notice display: none was used on a few selectors to make them disappear.
         
     }
 
-    .how_to_start-title  h1 { /*YO, no cambio nada*/
-      font-size: 25px;
+    .how_to_start-title { /*I got it!*/
+      font-size: 20px;
       color: #264653;
       display: flex;
       justify-content: center;
+      
        
     }
 
-    .list-container { /*YO, "lo logre"*/
+    .list-container { /*I got it!*/
       display: flex;
       justify-content: center;
     
@@ -498,10 +499,14 @@ You may notice display: none was used on a few selectors to make them disappear.
     #background {
         display: none;
     }
-
     #how_to_start_background { /*YO*/
       display: none;
     }
+
+    .start_a_conversation { /*YO*/
+      font-size: smaller;
+    }
+
     .mountains, .msg {
         width: 80%;
         display: block;
