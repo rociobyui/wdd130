@@ -473,8 +473,23 @@ You may notice display: none was used on a few selectors to make them disappear.
     }
     .home-title {
         font-size: 25px;
-        color: #134266;
+        color: #264653;
+        
     }
+
+    .how_to_start-title  h1 { /*YO, no cambio nada*/
+      font-size: 25px;
+      color: #264653;
+      width: 50%;
+       
+    }
+
+    .list-container { /*YO, "lo logre"*/
+      display: flex;
+      justify-content: center;
+    
+    }
+
     .rivers-card, .camping-card, .rapids-card { 
         margin: 50px auto;
         width: 60%;
