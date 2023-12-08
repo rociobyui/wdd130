@@ -450,8 +450,6 @@ div h1 {
 #why_choose_us-hero-msg h1 {
   font-size: 3em;
   color: #264653; /*Change color to have a better contrast.*/
-  
-  
   margin-top: 50px; /*We also need to push the hero text and button down by the same measurement so it doesn't go over the top of the navigation menu. Add a top margin of 100px to #hero-msg.*/  
 }
 
