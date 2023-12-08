@@ -423,10 +423,91 @@ div h1 {
 }
 
 
+/*Why Choose Us  Subpage-CSS*/
+
+/*Because we want the text message and button to take about 60% of the width we could use five fractions and have it take three of those five fractions. We could use repeat(5, 1fr) and have it span over three columns or we could use 1fr 3fr 1fr. We will also implicitly use two rows so the message is near the top of the image in the first row. The hero image will cover the entire grid.*/
+#why_choose_us-hero {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr; /*The children get implicitly placed into the first and second spots on the grid. This is not what we had planned, so we need to explicitly place them.*/
+  margin-top: -100px; /*Desaparecio la barra de navegacion con el logo y las paginas Este elemento esta encima. If we want our hero image to overlap with the navigation while still leaving the navigation layout the same for other pages of our website, we can use a negative top margin on our <div> with the id of hero. Add a margin-top of -100px. This will push the hero image over the navigation by 100px.*/
+} /*The reason we overlapped the image with the header is because you may have used a rgba opacity with the header background color and changing the top margins lets the image show through a bit. If you decided not to use any opacity in your background color of your header, your header may look different than the example at the bottom of the assignment. You may even wish to skip the overlapping step if you wish.*/
+
+/*Place the <div> with the id of hero-box across the entire grid. Spanning column lines 1–4 and row lines 1–3.*/
+#why_choose_us-hero-box {
+  grid-column: 1/4;
+  grid-row: 1/3;
+  z-index: -1; /*Without this code, it seems as if the header disappeared. That's because the hero image has overlapped it. Set a z-index of -1 to the #hero-box to send it back a layer on the z-axis.*/
+}
+
+#why_choose_us-hero-msg {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-top: 100px; /*We also need to push the hero text and button down by the same measurement so it doesn't go over the top of the navigation menu. Add a top margin of 100px to #hero-msg.*/  
+  text-align: left;
+  padding-left: 50px;
+}
+
+#why_choose_us-hero-msg h1 {
+  font-size: 3em;
+  color: #264653; /*Change color to have a better contrast.*/
+  
+  
+  margin-top: 50px; /*We also need to push the hero text and button down by the same measurement so it doesn't go over the top of the navigation menu. Add a top margin of 100px to #hero-msg.*/  
+}
+
+
+#why_choose_us-img {
+  width: 100%;
+}
+
+#why_choose_us-hero-msg h4 {
+  background: #efd595;
+  font-size: 2em;
+  color: #264653; /*Change color to have a better contrast.*/
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.why_choose_us-button-box {
+  grid-column: 2/3;
+  padding-left: 30px; /*to align with the above items*/
+  margin: 10px;
+}
+
+main h1 {
+  padding-top: 100px;
+}
+
+main details {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #264653;
+  background: #efd595;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+} 
+
+details summary {
+  font-size: 1.8em;
+}
+details p {
+  font-size: 1em;
+  padding: auto;
+}
 
 
 
-/*Feedback CSS*/
+
+
+
+/*Feedback CSS for Form*/
 #feedback {
     background-color: antiquewhite;
     position: absolute;
@@ -450,6 +531,25 @@ You may notice display: none was used on a few selectors to make them disappear.
         display: block;
         height: auto;
     }
+
+    #why_choose_us-hero { /*YO*/
+      display: block;
+      height: auto;
+      margin-top: 0;
+    }
+
+    
+    
+    #why_choose_us-hero-msg h4 {
+      display:none;
+    }
+   
+    why_choose_us-hero-msg {
+      margin-top: 0;
+      display: ;
+    }
+
+    
 
     .how_to_start-grid { /*YO*/
       display: block;
@@ -476,9 +576,9 @@ You may notice display: none was used on a few selectors to make them disappear.
     }
     .home-title {
         font-size: 25px;
-        color: #264653;
-        
+        color: #264653;    
     }
+
 
     .how_to_start-title { /*I got it!*/
       font-size: 20px;
@@ -487,18 +587,23 @@ You may notice display: none was used on a few selectors to make them disappear.
       justify-content: center;   
     }
 
+
     
 
     .list-container { /*I got it!*/
       display: flex;
       justify-content: center;
+    }
+    main details { /*YO*/
+      display: flex;
+      justify-content: center;
+    }
+    main summary {
+      font-size: 30px;
+      margin: auto;
+      
+    }
     
-    }
-
-    .rivers-card, .camping-card, .rapids-card { 
-        margin: 50px auto;
-        width: 60%;
-    }
     #background {
         display: none;
     }
@@ -509,14 +614,28 @@ You may notice display: none was used on a few selectors to make them disappear.
     .start_a_conversation { /*YO*/
       font-size: smaller;
     }
-
-    .mountains, .msg {
-        width: 80%;
-        display: block;
-        margin: 0 auto;
+    .why_choose_us-button-box a { /*YO*/
+      font-size: 18px;
     }
+
+    main details { /*YO*/
+      padding: 15px 30px; /*Adding padding to space out, the content on your page, from any edges or borders where it is needed.*/
+      margin-left: 50px; /*Adding margins to space out, the content on your page, beyond the borders of the elements where it is needed.*/
+      margin-right: 50px;
+      margin-bottom: 100px;
+      border-radius: 5px; /*Add a border-radius of 5px to the .book, .join selector*/
+      color: #264653;
+      line-height: 1.5em; /* a little more line height*/
+    }
+    
     footer {
         margin-top: 25px;
     }
+
+    .mountains, .msg {
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+  }
 }
 
