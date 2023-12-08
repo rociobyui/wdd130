@@ -472,7 +472,7 @@ div h1 {
 
 .why_choose_us-button-box {
   grid-column: 2/3;
-  padding-left: 30px; /*to align with the above items*/
+  padding-left: 20px; /*to align with the above items*/
   margin: 10px;
 }
 
@@ -538,12 +538,17 @@ You may notice display: none was used on a few selectors to make them disappear.
     }
 
     #why_choose_us-hero-msg h4 {
-      display:none;
+      margin-right: 50px;
+      font-size: 30px;
     }
-   
+    
+    #why_choose_us-hero-msg h1 {
+      font-size: 50px;
+      margin-right: 50px;
+    }
+
     why_choose_us-hero-msg {
       margin-top: 0;
-    
     }
 
     .how_to_start-grid { /*YO*/
@@ -580,21 +585,16 @@ You may notice display: none was used on a few selectors to make them disappear.
       justify-content: center;   
     }
 
-
-    
-
     .list-container { /*I got it!*/
       display: flex;
       justify-content: center;
+      margin-left: 10px;
+      margin-right: 10px;
     }
-    main details { /*YO*/
-      display: flex;
-      justify-content: center;
-    }
+    
     main summary {
       font-size: 30px;
-      margin: auto;
-      
+      margin: auto; 
     }
     
     #background {
@@ -608,10 +608,13 @@ You may notice display: none was used on a few selectors to make them disappear.
       font-size: smaller;
     }
     .why_choose_us-button-box a { /*YO*/
-      font-size: 18px;
+      font-size: 15px;
+      margin-right: 35px;
     }
 
     main details { /*YO*/
+      display: flex;
+      justify-content: center;
       padding: 15px 30px; /*Adding padding to space out, the content on your page, from any edges or borders where it is needed.*/
       margin-left: 50px; /*Adding margins to space out, the content on your page, beyond the borders of the elements where it is needed.*/
       margin-right: 50px;
@@ -620,6 +623,11 @@ You may notice display: none was used on a few selectors to make them disappear.
       color: #264653;
       line-height: 1.5em; /* a little more line height*/
     }
+
+    main h1 {
+      font-size: 50px;
+    }
+
     
     footer {
         margin-top: 25px;
