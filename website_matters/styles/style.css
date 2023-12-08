@@ -477,7 +477,8 @@ div h1 {
 }
 
 main h1 {
-  padding-top: 100px;
+  padding-top: 150px;
+  margin-bottom: 50px;
 }
 
 main details {
@@ -497,7 +498,7 @@ details summary {
 }
 details p {
   font-size: 1em;
-  padding: auto;
+  padding: 10px;
 }
 
 
@@ -536,25 +537,19 @@ You may notice display: none was used on a few selectors to make them disappear.
       margin-top: 0;
     }
 
-    
-    
     #why_choose_us-hero-msg h4 {
       display:none;
     }
    
     why_choose_us-hero-msg {
       margin-top: 0;
-      display: ;
-    }
-
     
+    }
 
     .how_to_start-grid { /*YO*/
       display: block;
       height: auto;
     }
-
-
 
     nav, footer {
         flex-direction: column;
