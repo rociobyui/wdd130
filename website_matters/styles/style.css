@@ -477,8 +477,7 @@ div h1 {
 
 .why_choose_us-button-box {
   grid-column: 2/3;
-  padding-left: 20px; /*to align with the above items*/
-  margin: 10px;
+  padding-left: 20px; /*to align with the above items*/ 
 }
 
 main h1 {
