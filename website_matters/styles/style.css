@@ -389,7 +389,7 @@ button:hover {
 .how_to_start-title {
   color: #264653;
   font-family: 'Montserrat', 'Helvetica', sans-serif;
-  margin-top: 10pxpx;
+  margin-top: 10px;
 }
 
 .blue_background-msg p {
@@ -450,7 +450,6 @@ main section img {
 #why_choose_us-hero-msg h1 {
   font-size: 3em;
   color: #264653; /*Change color to have a better contrast.*/
-  margin-top: x; /*We also need to push the hero text and button down by the same measurement so it doesn't go over the top of the navigation menu. Add a top margin of 100px to #hero-msg.*/  
   text-align: center;
 }
 
