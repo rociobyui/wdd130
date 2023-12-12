@@ -523,12 +523,6 @@ details p {
 }
 
 
-/*putting space among forms*/
-form {
-  margin-bottom: 100px;
-}
-
-
 /*Feedback CSS for Form*/
 #feedback {
     background-color: antiquewhite;
