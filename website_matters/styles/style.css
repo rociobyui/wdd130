@@ -132,21 +132,19 @@ main section {
 }
 .msg h2 {
     color: #fef4ec;
-
-
+    font-size: 2.3em;
+    line-height: 1.3em;
 }
+
 .msg p {
     color: #fef4ec;
-    font-size: 1em; /*Adjusting font sizes*/
+    font-size: 1.2em; /*Adjusting font sizes*/
     padding-bottom: 15px;
 }
 
 main section img {
     box-sizing: border-box; /*Add box-sizing: border-box; to the main section img selector. Now the border and image will be included in the size of those images*/    
 }
-
-
-
 
 /*---------------------------------------------------Start of CSS Style for Slide Show-------------------------------------------------------------------------------------*/
 
@@ -341,10 +339,13 @@ button:hover {
   margin-right: 0px;
   margin-bottom: 100px;
   border-radius: 5px; /*Add a border-radius of 5px to the .book, .join selector*/
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 0;
 }
 .how_to_start-msg h2{
   color: #264653;
-  font-size: 1.5em; 
+  font-size: 2em; 
   text-align: center;
 }
 .list-container ul {
@@ -375,7 +376,6 @@ button:hover {
     grid-row: 5/8;
     box-shadow: 5px 5px 10px #264653; /*Enhancements*/
     height: auto; /*Responsivenes in the img. Width 100% and height to auto.*/
-
 }
 .blue_background-msg {
   background-color: #efd595;
@@ -389,15 +389,17 @@ button:hover {
 .how_to_start-title {
   color: #264653;
   font-family: 'Montserrat', 'Helvetica', sans-serif;
-  margin-top: 10px;
+  margin-top: 10pxpx;
 }
 
 .blue_background-msg p {
   color: #264653;
-  font-size: 1em; /*Adjusting font sizes*/
-  padding-bottom: 10px;
+  font-size: 1.2em; /*Adjusting font sizes*/
+  padding-bottom: 15px;
 }
-
+.blue_background-msg h2, h3 {
+  color: #264653;
+}
 main section img {
   box-sizing: border-box; /*Add box-sizing: border-box; to the main section img selector. Now the border and image will be included in the size of those images*/    
 }
@@ -408,6 +410,7 @@ main section img {
   padding: 15px 30px; /*Adding padding to space out, the content on your page, from any edges or borders where it is needed.*/
   margin-top: 50px; /*Adding margins to space out, the content on your page, beyond the borders of the elements where it is needed.*/
   border-radius: 5px; /*Add a border-radius of 5px to the .book, .join selector*/
+  font-size: 18px;
 }
 .start_conversation-button-box {
   text-align: center;
@@ -416,14 +419,6 @@ main section img {
 .start_a_conversation:hover {   /*Hover Pseudo-Classes*/
   background-color: #264653;
   color: #fef4ec;
-}
-div h1 {
-  text-align: center;
-}
-
-.blue_background-msg h1 {
-  font-size: 2.5em;
-  line-height: 1em;
 }
 
 
@@ -447,15 +442,16 @@ div h1 {
 #why_choose_us-hero-msg {
   grid-column: 1/2;
   grid-row: 1/2;
-  margin-top: 100px; /*We also need to push the hero text and button down by the same measurement so it doesn't go over the top of the navigation menu. Add a top margin of 100px to #hero-msg.*/  
+  margin-top: 50px; /*We also need to push the hero text and button down by the same measurement so it doesn't go over the top of the navigation menu. Add a top margin of 100px to #hero-msg.*/  
   text-align: left;
-  padding-left: 50px;
+  padding-left: 75px;
 }
 
 #why_choose_us-hero-msg h1 {
   font-size: 3em;
   color: #264653; /*Change color to have a better contrast.*/
-  margin-top: 50px; /*We also need to push the hero text and button down by the same measurement so it doesn't go over the top of the navigation menu. Add a top margin of 100px to #hero-msg.*/  
+  margin-top: x; /*We also need to push the hero text and button down by the same measurement so it doesn't go over the top of the navigation menu. Add a top margin of 100px to #hero-msg.*/  
+  text-align: center;
 }
 
 
@@ -477,12 +473,14 @@ div h1 {
 
 .why_choose_us-button-box {
   grid-column: 2/3;
-  padding-left: 20px; /*to align with the above items*/ 
+  padding-left: 50px; /*to align with the above items*/ 
 }
 
 main h1 {
   padding-top: 150px;
   margin-bottom: 50px;
+  text-align: center;
+  color: #264653;
 }
 
 main details {
@@ -505,9 +503,30 @@ details p {
   padding: 10px;
 }
 
+/*Start a Conversation-Subpage-CSS*/
+.office-title {
+  text-align: center;
+  background: #efd595;
+  color: #264653;
+  font-size: 3em;
+  border-radius: 20px;
+  margin-top: 0;
+}
+
+.office-subtitle {
+  text-align: center;
+  font-size: 1.5em;
+  padding-left: 200px;
+  padding-right: 200px;
+  color: #264653;
+  margin-top: 100px;
+}
 
 
-
+/*putting space among forms*/
+form {
+  margin-bottom: 100px;
+}
 
 
 /*Feedback CSS for Form*/
